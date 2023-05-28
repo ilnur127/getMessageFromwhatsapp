@@ -1,0 +1,20 @@
+{
+  "presets": [
+    "next/babel",
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ],
+    "@babel/preset-typescript"
+  ],
+  "plugins": ["inline-react-svg"],
+  "env": {
+    "test": {
+      "plugins": [" @babel/plugin-transform-modules-commonjs"]
+    }
+  }
+}

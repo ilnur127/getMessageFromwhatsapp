@@ -1,0 +1,27 @@
+PUT https://127.0.0.1:4445/clients/kipariss-vvg-needs HTTP/1.1
+Accept: application/json
+content-type: application/json
+
+ {
+    "client_id": "kipariss-vvg-needs",
+    "client_secret": "needs-vvg-secret",
+    "client_name": "",
+    "redirect_uris": [
+        "https://needs.kipariss-vvg.rgubdd.local/api/auth/callback/kipariss"
+    ],
+    "grant_types": [
+        "authorization_code",
+        "client_credentials"
+    ],
+    "response_types": [
+        "code",
+        "id_token",
+        "id_token_hint"
+    ],
+    // "scope": "user, openid",
+    "scope": "openid",
+    "token_endpoint_auth_method": "client_secret_basic",
+    "post_logout_redirect_uris": [
+        "https://needs.kipariss-vvg.rgubdd.local/auth/logout/callback"
+    ]
+}

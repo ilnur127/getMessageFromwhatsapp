@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'Akrobat';
+  src: url('./fonts/Akrobat-Regular.woff');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Akrobat';
+  src: url('./fonts/Akrobat-SemiBold.woff');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Akrobat';
+  src: url('./fonts/Akrobat-Bold.woff');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Akrobat';
+  src: url('./fonts/Akrobat-ExtraBold.woff');
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Akrobat';
+  src: url('./fonts/Akrobat-Black.woff');
+  font-weight: 900;
+}
+:root {
+  --kipariss-color-blue: #36476c;
+  --kipariss-color-gold: #ceab52;
+  --kipariss-color-white: #fff;
+  --kipariss-color-black: #000;
+  --kipariss-color-pantone537: #b5c4d9;
+  --kipariss-color-pantone650: #d6dee8;
+  --kipariss-color-pantone656: #f0f2f7;
+  --kipariss-color-pantone427: #dfe0e1;
+  --kipariss-color-pantone429: #a8b1b8;
+  --kipariss-color-pantone134: #f4d690;
+  --kipariss-color-pantone804: #edab5c;
+  --kipariss-color-pantone173: #ce4017;
+  --kipariss-block-shadow-color: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --kipariss-buttons-width: 136px;
+  --kipariss-buttons-heigth: 45px;
+  --kipariss-buttons-background: linear-gradient(360deg, #36476c, #475b86);
+}
+
+/* Scrollbar */
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background: #b5c4d9;
+  border-radius: 100px;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--kipariss-color-blue);
+  border-radius: 100px;
+}
+*:not(:hover)::-webkit-scrollbar {
+  background: var(--kipariss-color-pantone650) !important;
+}
+*:not(:hover)::-webkit-scrollbar-thumb {
+  background: var(--kipariss-color-pantone537) !important;
+}
+/* ------- */
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 38px;
+  height: 100%;
+  line-height: 1;
+  font-family: 'Akrobat';
+  font-style: normal;
+  color: #36476c;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font-family: 'Akrobat';
+}
+button {
+  background: none;
+  display: flex;
+}
+input::placeholder {
+  color: #a8b1b8;
+  font-size: 18px;
+  font-weight: 500;
+}
+input[type='date'] {
+  color: #36476c;
+  font-weight: 700;
+}
+input[type='date']::placeholder {
+  color: #a8b1b8;
+}
+input::-webkit-input-placeholder {
+  color: #a8b1b8;
+  font-size: 18px;
+  font-weight: 500;
+}
+input::-moz-placeholder {
+  color: #a8b1b8;
+  font-size: 18px;
+  font-weight: 500;
+} /* Firefox 19+ */
+input:-moz-placeholder {
+  color: #a8b1b8;
+  font-size: 18px;
+  font-weight: 500;
+} /* Firefox 18- */
+input:-ms-input-placeholder {
+  color: #a8b1b8;
+  font-size: 18px;
+  font-weight: 500;
+}
+input:disabled {
+  background: rgba(223, 224, 225, 1);
+}

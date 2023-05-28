@@ -1,0 +1,27 @@
+POST https://127.0.0.1:4445/clients HTTP/1.1
+Accept: application/json
+content-type: application/json
+
+ {
+    "client_id": "kipariss-needs-dev-local",
+    "client_secret": "needs-secret",
+    "client_name": "",
+    "redirect_uris": [
+         "https://localhost:3012/api/auth/callback/kipariss"
+    ],
+    "grant_types": [
+        "authorization_code",
+        "client_credentials"
+    ],
+    "response_types": [
+        "code",
+        "id_token",
+        "id_token_hint"
+    ],
+    "scope": "openid",
+    "subject_type": "public",
+    "token_endpoint_auth_method": "client_secret_basic",
+    "post_logout_redirect_uris": [
+        "https://localhost:3012/auth/logout/callback"
+    ]
+}

@@ -1,0 +1,87 @@
+@import './default.css';
+@import './normalize.css';
+@import 'react-toastify/dist/ReactToastify.min.css';
+
+.commonMain {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main {
+  margin: auto;
+  width: 95%;
+  flex: 1;
+  position: relative;
+}
+header {
+  padding: 0 2.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  background: #4cae4f;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header a {
+  font-weight: 400;
+  font-size: 34px;
+  color: white;
+}
+footer {
+  min-height: 50px;
+  padding: 0 2.5%;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  flex-shrink: 0;
+  color: white;
+  background: black;
+}
+button {
+  background: #e5e5e5;
+  border-radius: 10px;
+  padding: 5px 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button:hover {
+  background: #cdc9c9;
+}
+.alertComponent {
+  display: grid;
+  grid-row-gap: 20px;
+}
+.alertBlock {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  min-width: 400px;
+}
+.alertBlock__body {
+  display: flex;
+  color: #404650;
+  font-size: 18px;
+  font-weight: 700;
+  align-items: flex-start;
+}
+.alertBlock button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  opacity: 1;
+}
+.alertBlock button svg {
+  fill: #a8b1b8;
+  height: 20px;
+  width: 20px;
+}
+.alertBlock_success {
+  background: #c4e4cf;
+}
+.alertBlock_error {
+  background: #f6dddc;
+}

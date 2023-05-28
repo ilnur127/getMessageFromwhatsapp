@@ -1,0 +1,27 @@
+POST https://10.146.33.54:4445/clients HTTP/1.1
+Accept: application/json
+content-type: application/json
+
+ {
+    "client_id": "kipariss-pine-dev-local",
+    "client_secret": "pine-local-dev-secret",
+    "client_name": "",
+    "redirect_uris": [
+         "https://localhost:3016/api/auth/callback/kipariss"
+    ],
+    "grant_types": [
+        "authorization_code",
+        "client_credentials"
+    ],
+    "response_types": [
+        "code",
+        "id_token",
+        "id_token_hint"
+    ],
+    "scope": "openid",
+    "subject_type": "public",
+    "token_endpoint_auth_method": "client_secret_basic",
+    "post_logout_redirect_uris": [
+        "https://localhost:3016/auth/logout/callback"
+    ]
+}
